@@ -27,7 +27,7 @@ class ListViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.viewDidLoad()
         eleTable.dataSource = self as UITableViewDataSource
         eleTable.delegate = self as UITableViewDelegate
-        searchbar.delegate = self as? UISearchBarDelegate
+        searchbar.delegate = self as UISearchBarDelegate
         searchbar.enablesReturnKeyAutomatically = false
         searchbar.showsCancelButton = true
         

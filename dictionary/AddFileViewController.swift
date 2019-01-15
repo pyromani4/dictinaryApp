@@ -20,7 +20,7 @@ class AddFileViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleField.delegate = self as! UITextFieldDelegate
+        titleField.delegate = self as UITextFieldDelegate
         titleField.placeholder = "ここに入力"
         
         if (userDefaults.array(forKey: "files") != nil){

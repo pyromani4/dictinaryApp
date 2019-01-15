@@ -75,7 +75,7 @@ class ViewMainController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(_ table: UITableView,didSelectRowAt indexPath: IndexPath) {
         fKey = files[indexPath.row]
         userDefaults.set(fKey, forKey: "fKey")
-        let targetViewController = self.storyboard!.instantiateViewController(withIdentifier: "List")as! UIViewController
+        let targetViewController = self.storyboard!.instantiateViewController(withIdentifier: "List")
         self.present(targetViewController, animated: true, completion: nil)
     }
     
